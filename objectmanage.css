@@ -1,0 +1,104 @@
+.setupheader, .setupcontent {
+  margin-bottom: 10px;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(221, 219, 218);
+  border-radius: 5px;
+  background: rgb(243, 242, 242);
+  background-clip: padding-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(221, 219, 218);
+}
+.setupheader {
+  display: flex;
+  justify-content: space-between;
+}
+.setupcontent {
+  background-color: white;
+  box-shadow: none;
+  padding: 0;
+}
+.part-left .image {
+  width: 46px;
+  height: 46px;
+  background-color: #769ed9;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.part-left {
+  display: flex;
+}
+.description-msg > span {
+  font-size: 12px;
+  color: rgb(112, 110, 107);
+}
+.description-msg > p {
+  color: rgb(62, 62, 60);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0;
+}
+.description-msg > h6 {
+  padding-top: 8px;
+  font-weight: 300;
+  font-size: .75rem;
+  color: rgb(62, 62, 60);
+  margin: 0;
+}
+.search-input, .select {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 219, 218);
+  border-radius: .25rem;
+}
+.part-right {
+  display: flex;
+}
+.search-input {
+  width: 192px;
+  height: 32px;
+  outline: none;
+}
+.select {
+  width: 48px;
+  height: 32px;
+  padding: 0 16px;
+  margin-left: 4px;
+}
+.table-header {
+  display: flex;
+}
+.table-header > div {
+  height: 15px;
+  padding: 4px 8px;  
+  color: rgb(0, 112, 210);
+  font-size: 12px;
+}
+.cell-label {
+  width: 168px;
+}
+.cell-name {
+  width: 264px;
+}
+.cell-des {
+  width: 500px;
+}
+.cell-modify {
+  width: 145px;
+}
+.cell-deploy, .cell-defined {
+  width: 79px;
+}
+.cell-blank {
+  flex: 1;
+}
+.table-content {
+  display: flex;
+  font-size: 12px;
+}
+.table-content > div {
+  padding: 8px;
+  border-top: 1px solid rgb(221, 219, 218);
+}
+.cell-title {
+  color: rgb(0, 112, 210);  
+}
