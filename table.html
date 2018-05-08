@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .table {
+      display: table;
+      border: 1px solid #eee;
+      width: 100%;
+    }
+    .table-row {
+      display: flex;
+    }
+    .table-header-group {
+      display: table-header-group;
+    }
+    .table-header-group .table-cell{
+      padding: .25rem .5rem;
+    }
+    .table-row-group {
+      display: table-row-group;
+    }
+    .table-row-group .table-cell {
+      padding: .8rem .5rem;
+    }
+    .table-cell:nth-child(1) {
+      flex-grow: 3;
+    }
+    .table-cell:nth-child(2) {
+      flex-grow: 4;
+    }
+    .table-cell:nth-child(3) {
+      flex-grow: 6;
+    }
+    .table-cell:nth-child(4) {
+      flex-grow: 2;
+    }
+    .table-cell:nth-child(5) {
+      flex-grow: 1;
+    }
+    .table-cell:nth-child(6) {
+      flex-grow: 1;
+    }
+    .table-cell:nth-child(7) {
+      flex-grow: 1;
+    }
+    .table-row-group > div{
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="table-header-group">
+      <div class="table-row">
+        <div class="table-cell">1</div>
+        <div class="table-cell">2</div>
+        <div class="table-cell">3</div>
+        <div class="table-cell">4</div>
+        <div class="table-cell">5</div>
+        <div class="table-cell">6</div>
+        <div class="table-cell">7</div>
+      </div>
+    </div>
+    <div class="table-row-group">
+      <div class="table-row">
+        <div class="table-cell">1</div>
+        <div class="table-cell">2</div>
+        <div class="table-cell">3</div>
+        <div class="table-cell">4</div>
+        <div class="table-cell">5</div>
+        <div class="table-cell">6</div>
+        <div class="table-cell">7</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

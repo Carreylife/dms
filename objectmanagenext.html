@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="objectmanage.css">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="object-manage">
+    <div class="setupheader">
+      <div class="part-left">
+        <div class="image">
+          <img src="" alt="">
+        </div>
+        <div class="description-msg">
+          <span>设置</span>
+          <p>对象管理器</p>
+          <h6>36 个项目，按标签排序</h6>
+        </div>
+      </div>
+    </div>
+    <div class="part-two">
+      <div class="slide-left-nav">
+        <div class="active nav">详细信息</div>
+        <div class="nav">字段和关系</div>
+      </div>
+      <div class="conText">
+        <div class="slide-right" style="display: block">
+          <div class="slide-right-title">
+            <p class="desc-msg">详细信息</p>
+            <div class="function-btn">
+              <span>编辑</span>
+              <span>删除</span>
+            </div>
+          </div>
+          <div class="slide-right-content">
+            <div class="item">
+              <div class="item-cell">
+                <span>描述</span>
+                <p>测试创建对象</p>
+              </div>
+              <div class="item-cell"></div>
+            </div>
+            <div class="item">
+              <div class="item-cell">
+                <span>描述</span>
+                <p>测试创建对象</p>
+              </div>
+              <div class="item-cell"></div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="slide-right container-content">
+          <div class="slide-right-header">
+            <div class="slide-header-left">
+              <p>字段和关系</p>
+              <span>5 个项目，按字段标签排序</span>
+            </div>
+            <div class="slide-header-right">
+              <input type="text" class="search-input" placeholder="快速查找">
+              <div class="function-btn">
+                <span>新建</span>
+                <span class="word-depond">字段依赖性</span>
+                <span>设置历史跟踪</span>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="table-head">
+              <div class="table-cell">字段标签</div>
+              <div class="table-cell">字段名</div>
+              <div class="table-cell">数据类型</div>
+              <div class="table-cell">控制字段</div>
+              <div class="table-cell">已索引</div>
+              <div class="table-cell">字段标签</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell title-text">字段标签</div>
+              <div class="table-cell">字段名</div>
+              <div class="table-cell">数据类型</div>
+              <div class="table-cell">控制字段</div>
+              <div class="table-cell">已索引</div>
+              <div class="table-cell">
+                <div class="dropdown">
+                  <button class="btn btn-small dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <li><a href="#">删除</a></li>
+                    <li><a href="#">编辑</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.nav').click(function() {
+        var i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.slide-right').eq(i).show().siblings().hide();
+    });
+  </script>
+</body>
+</html>
