@@ -1,3 +1,4 @@
+
 .object-manage {
   padding: 10px;
 }
@@ -74,7 +75,7 @@
 }
 .search-input {
   width: 192px;
-  height: 34px;
+  height: 32px;
   outline: none;
   font-size: 14px;
   padding-left: 8px;
@@ -85,6 +86,9 @@
   display: flex;
   align-items: center;
 }
+.table-head, .table-row {
+  display: flex;
+}
 .table-head > div {
   padding: 4px 8px;
   color: rgb(0, 112, 210);
@@ -94,12 +98,44 @@
   color: rgb(0, 112, 210);
   cursor: pointer;  
 }
-
+.table-row > div {
+  padding: 8px;
+  font-size: 14px;
+}
+.table-row:hover {
+  background-color: #F3F1F2;
+}
+.cell-label {
+  width: 168px;
+}
+.cell-name {
+  width: 264px;
+}
+.cell-des {
+  width: 500px;
+}
+.cell-modify {
+  width: 145px;
+}
+.cell-deploy, .cell-defined {
+  width: 79px;
+}
+.cell-blank {
+  flex: 1;
+}
+.table-content .tr {
+  display: flex;
+}
 .table-content .tr:hover {
   background-color: #F3F1F2;
 }
-
-thead > tr {
+.table-content .tr > div {
+  padding: 8px;
+  border-top: 1px solid rgb(221, 219, 218);
+  display: flex;
+  align-items: center;
+}
+.cell-title {
   color: rgb(0, 112, 210);  
 }
 .caret {
@@ -207,58 +243,30 @@ thead > tr {
 .conText .slide-right.show {
   display: block;
 }
-table {
+.table {
+  display: table;
   border-collapse: collapse;
   border-top: 1px solid rgb(221, 219, 218);
   border-bottom: 1px solid rgb(221, 219, 218);
   max-height: 500px;
   overflow: auto;
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-  width: 100%;
 }
-
-td, th {
-  padding: 10px 20px;
+/* .table-row {
+  display: table-row;
+} */
+.table-cell {
+  display: table-cell;
+  width: 16.667%;
 }
-
-th {
-  background-color: rgb(235,235,235);
-  text-align: left;
-  white-space: nowrap;
+.table-row {
+  border-top: 1px solid rgb(221, 219, 218);
+  align-items: center;
 }
-
-td {
-  text-align: left;
+.container-content {
+  padding: 0!important;
 }
-
-td > .text-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 200px;
-}
-
-tr {
-  border: 1px solid rgb(221, 219, 218);
-}
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
-}
-
-tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
-}
-
-tbody {
-  font-size: 90%;
-  font-style: italic;
-}
-td {
-  padding: 8px!important;
-}
-th {
-  padding: 4px 8px!important;
+.btn {
+  border: 1px solid rgb(221, 219, 218)!important;
 }
 .navbar-right {
   margin-right: 0!important;
